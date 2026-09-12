@@ -1,0 +1,39 @@
+{
+  "nomCliente": "Juan Pérez",
+  "contacto": "3001234567",
+  "departamento": "Cundinamarca",
+  "ciudad": "Bogotá"
+}
+
+
+
+{
+  "nomProducto": "Teclado mecánico",
+  "cantidad": 50,
+  "precio": 120000
+}
+
+
+
+{
+  "id_cliente": 1,
+  "estado": "completada",
+  "productos": [
+    { "id_producto": 1, "cantidad": 2, "precio_unitario": 120000 }
+  ]
+}
+
+
+
+
+-- Ver los datos de clientes
+SELECT * FROM clientes;
+
+-- Ver los datos de productos
+SELECT * FROM productos;
+
+-- Ver los datos de ventas
+SELECT * FROM ventas;
+
+-- Ver el detalle de una venta
+SELECT * FROM detalle_venta;
