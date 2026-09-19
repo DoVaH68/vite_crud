@@ -2,7 +2,9 @@
   "name": "vite_crud",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix sergio-proyect/backend\" \"npm run dev --prefix sergio-proyect/frontend\""
+    "dev": "concurrently \"npm run dev --prefix sergio-proyect/backend\" \"npm run dev --prefix sergio-proyect/frontend\"",
+    "build": "npm install --prefix sergio-proyect/backend && npm install --prefix sergio-proyect/frontend && npm run build --prefix sergio-proyect/frontend",
+    "start": "npm start --prefix sergio-proyect/backend"
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
