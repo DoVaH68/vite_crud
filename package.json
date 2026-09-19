@@ -1,0 +1,10 @@
+{
+  "name": "vite_crud",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix sergio-proyect/backend\" \"npm run dev --prefix sergio-proyect/frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
