@@ -27,9 +27,6 @@ app.use('/productos', routeProductos);
 app.use('/ventas', routeVentas);
 app.use('/', indexRouter);
 
-// --- Sirve el frontend ya compilado ---
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
-
 app.use(function(req, res, next) {
   if (req.method === 'GET' && !req.path.startsWith('/users') && !req.path.startsWith('/clientes') && !req.path.startsWith('/productos') && !req.path.startsWith('/ventas')) {
     return res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
